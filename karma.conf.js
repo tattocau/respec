@@ -107,6 +107,7 @@ module.exports = function(config) {
         flags: ["--no-sandbox"]
       },
     },
+    retryLimit: 4,
   };
   if (process.env.TRAVIS) {
     options.detectBrowsers.enabled = false;
